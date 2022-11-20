@@ -1,0 +1,76 @@
+
+# All leaders will have a common trait-point value set in defines, which they use to grab traits
+
+# leader_trait = yes - this tags the trait as a leader-trait and not a species-trait
+# initial = no - if set to no, this trait can not be granted to leaders when they are generated
+# leader_class = { admiral scientist } -- OR - if not set, it can be given to all leader-types except Rulers
+# requires_traits = { trait_psionic } -- AND - leader-trait can only be randomly given on generation if the leaders species has this trait
+# requires_governments = { despotic_hegemony ai_overlordship } -- OR - leader-trait can only be randomly given on generation if the Empire has this type of government form
+# prerequisites = { tech_psionic_theory } - AND - leader-trait can only be given if the technology specified has been researched by the Empire
+
+#################
+# Ruler Traits #
+#################
+
+# Ruler-traits have the same parameters as leader-traits
+# leader_class has to be set to include "ruler" for a ruler to be valid for a trait
+# modifiers granted to rulers are applied to the entire Empire
+
+#初始的
+leader_trait_ruler_dkeied = {
+	leader_trait = { ruler }
+	leader_class = { ruler }
+
+	cost = 0
+	initial = no
+	randomized = no
+
+	icon = "gfx/interface/icons/leader_traits/leader_trait_dkeied.png"
+
+	self_modifier = {
+		species_leader_exp_gain = 0.50
+	}
+
+	modifier = {
+		country_physics_tech_research_speed = 0.50
+		country_society_tech_research_speed = 0.75
+		country_engineering_tech_research_speed = 0.50
+		country_base_minor_artifacts_produces_add = 50
+		country_base_consumer_goods_produces_add = 100
+		country_base_unity_produces_add = 100
+		country_base_energy_produces_add = 100
+		starbase_buildings_cost_mult = -0.35
+		megastructure_build_speed_mult = -2.56
+		megastructures_habitat_minerals_cost_mult = -0.25
+		building_time_mult = -0.15
+		army_morale = 1
+		ship_weapon_damage = 0.25
+	}
+	immortal_leaders = yes
+}
+
+#事件解锁#
+leader_trait_ruler_frih = {
+	cost = 0
+	icon = "gfx/interface/icons/leader_traits/leader_trait_frih.png"
+	immortal_leaders = no
+	modifier = {
+		army_morale = 0.5
+		ship_weapon_damage = 0.75
+		country_physics_tech_research_speed = 0.55
+		country_society_tech_research_speed = 0.35
+		country_engineering_tech_research_speed = 0.40
+		country_base_minor_artifacts_produces_add = 75
+		country_base_consumer_goods_produces_add = 80
+		megastructure_build_speed_mult = -2.56
+		megastructures_habitat_minerals_cost_mult = -0.25
+		megastructures_habitat_cost_mult = -0.75
+		country_base_unity_produces_add = 25
+		country_base_energy_produces_add = 50
+		starbase_buildings_cost_mult = -0.25
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	initial = yes
+	randomized = no
+}

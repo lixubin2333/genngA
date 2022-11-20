@@ -1,0 +1,24 @@
+trait_huanxiangxiadejingzi = {
+	cost = -2
+	icon = "gfx/interface/icons/traits/trait_fantasty_dream.png"
+    improves_leaders = yes
+	initial = yes
+	randomized = no
+	modification = yes
+	immortal_leaders = yes
+	
+	allowed_archetypes = { BIOLOGICAL KANSEN }
+	modifier = {
+		planet_jobs_food_produces_mult = 0.15
+		planet_jobs_minerals_produces_mult = 0.15
+		planet_jobs_alloys_produces_mult = 0.15
+		planet_jobs_energy_produces_mult = 0.50
+		planet_jobs_unity_produces_mult = 0.50
+		planet_jobs_engineering_research_produces_mult =  0.25
+		planet_jobs_physics_research_produces_mult = 0.25
+		planet_jobs_society_research_produces_mult = 0.25
+		pop_growth_speed = 50
+		pop_happiness = 50
+		species_leader_exp_gain = 0.50
+	}
+}

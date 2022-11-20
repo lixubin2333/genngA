@@ -1,0 +1,13 @@
+on_game_start = {
+	events = {
+		teaat.790
+		kafz_leader_traits_give.700
+	}
+}
+
+on_game_start_country = {
+	events = {
+		kafz_seting_mace.100
+	}
+}
+

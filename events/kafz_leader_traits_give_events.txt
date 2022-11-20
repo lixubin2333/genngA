@@ -1,0 +1,69 @@
+namespace = kafz_leader_traits_give #事件文本文件的名字，后面的_events不写
+
+event = {
+	id = kafz_leader_traits_give.700
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		species = { has_trait = trait_huanxiangxiadejingzi }# has_trait后加你的种族特质
+	}
+	immediate = { #效果
+		every_owned_leader = {
+			from = {
+				if = {
+					#限制（等于什么什么是）
+					limit = {
+						leader_class = admiral
+					}
+					#那么就.....
+					add_trait = leader_trait_dkeied_adm
+					add_ruler_trait = leader_trait_ruler_dkeied
+					break = yes
+				}
+				if = {
+					#限制（等于什么什么是）
+					limit = {
+						leader_class = general
+					}
+					#那么就.....
+					add_trait = leader_trait_dkeied_gen
+					add_ruler_trait = leader_trait_ruler_dkeied
+					break = yes
+				}
+				if = {
+					#限制（等于什么什么是）
+					limit = {
+						leader_class = governor
+					}
+					#那么就.....
+					add_trait = leader_trait_dkeied_gov
+					add_ruler_trait = leader_trait_ruler_dkeied
+					break = yes
+				}
+				if = {
+					#限制（等于什么什么是）
+					limit = {
+						leader_class = scientist
+					}
+					#那么就.....
+					add_trait = leader_trait_dkeied_sci
+					add_ruler_trait = leader_trait_ruler_dkeied
+					break = yes
+				}
+				if = {
+					#限制（等于什么什么是）
+					limit = {
+						leader_class = ruler
+					}
+					#那么就.....
+					add_trait = leader_trait_ruler_dkeied
+					add_ruler_trait = leader_trait_ruler_dkeied
+					break = yes
+				}
+			}
+		}
+	}
+}
+
+
+

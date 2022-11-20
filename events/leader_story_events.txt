@@ -1,0 +1,10 @@
+namespace = isifa_isafnas_dream
+
+event = {
+    id = isifa_isafnas_dream.025
+    is_triggered_only = yes
+    title = "I_am_back"
+    desc = "you_re_my_love_that_i_cant_leave_you"
+
+
+}

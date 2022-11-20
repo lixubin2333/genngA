@@ -1,0 +1,26 @@
+leader_trait_scientist_dkeied = {
+	cost = 0
+	initial = no
+	species_potential_add = { }
+	randomized = no
+	icon = "gfx/interface/icons/leader_traits/leader_trait_dkeied.png"
+	modifier ={
+		science_ship_survey_speed = 0.275
+		ship_anomaly_research_speed_mult = 0.368
+		ship_anomaly_fail_risk = -0.681
+		ship_archaeological_site_clues_add = 281
+		all_technology_research_speed = 0.25
+	}
+	leader_trait = {
+		scientist
+	}
+	leader_class = {
+		scientist
+	}
+	ai_categories = {
+		survey
+		physics
+		society
+		engineering
+	}
+}

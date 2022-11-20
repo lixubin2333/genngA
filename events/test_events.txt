@@ -1,0 +1,21 @@
+namespace = teaat
+
+event = {
+	id = teaat.790
+	is_triggered_only = yes
+	hide_window = no
+	desc = "kafz_game_start.0.desc"
+	title = "kafz_game_start.0.title"
+
+	trigger = {
+		is_ai = no
+	}
+	immediate = {
+		set_country_flag = nice_start
+	}
+
+	option = {
+		name = sodayo
+	}
+
+}

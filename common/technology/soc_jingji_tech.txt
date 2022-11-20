@@ -1,0 +1,19 @@
+tech_jingjigaigeqianmubiao = {
+    area = society
+    tier = 1
+    cost = 1000
+    category = { statecraft }
+
+    start_tech = no
+    is_rare = no
+    is_dangerous = no
+    is_reverse_engineerable = no
+
+    modifier = {
+		planet_jobs_energy_produces_mult = 0.50
+        country_base_energy_produces_add = 100
+        all_technology_research_speed = 0.10
+    }
+
+}
+

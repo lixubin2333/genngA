@@ -1,0 +1,26 @@
+namespace = kafz_seting_mace
+country_event = {
+	id = kafz_seting_mace.100
+	title = "kafz_game_start.0.title"
+	desc = "kafz_game_start.0.desc"
+	fire_only_once = yes
+	is_triggered_only = yes #The game will not consider this event for starting on its own. Event will need to be triggered by another event, or by some other effect. Most events will use this.
+	trigger = {
+		is_ai = no
+	}
+	immediate = {
+		every_playable_country = {
+			if = {
+				limit = { is_ai = no }
+                add_modifier = {
+					modifier = test_modifier
+				}
+			}
+		}
+	}
+	option = {
+		name = "kafz_game_start.0.a"
+	}
+}
+
+

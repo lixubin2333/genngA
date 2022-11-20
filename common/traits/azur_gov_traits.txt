@@ -1,0 +1,24 @@
+leader_trait_governor_dkeied = {
+	cost = 0
+	icon = "gfx/interface/icons/leader_traits/leader_trait_dkeied.png"
+	self_modifier = {
+		species_leader_exp_gain = 0.50
+	}
+	initial = no
+	randomized = no
+    modifier = {
+		country_physics_tech_research_speed = 0.50
+		country_society_tech_research_speed = 0.75
+		country_engineering_tech_research_speed = 0.50
+		country_base_minor_artifacts_produces_add = 50
+		country_base_consumer_goods_produces_add = 100
+		country_base_unity_produces_add = 100
+		country_base_energy_produces_add = 100
+		starbase_buildings_cost_mult = -0.35
+		building_time_mult = -0.15
+	}
+	leader_class = { governor }
+	leader_trait = { governor }
+	immortal_leaders = yes
+
+}

@@ -1,0 +1,149 @@
+##############################################################
+###	PORTRAITS SETTINGS
+###
+### Which portraits are used is set in
+### common\species_classes\00_species_classes.txt
+###
+###	This file configures how portraits and planet backgrounds are built.
+###	Default position orientation is lower left.
+##############################################################
+#载入的图片
+portraits = {
+    lituoliao_01 = { texturefile = "gfx/models/portraits/Azur_Lane/lituoliao.png" }
+	lituoliao_01_X = { texturefile = "gfx/models/portraits/Azur_Lane/lituoliao_X.png" }
+    lituoliao_02 = { texturefile = "gfx/models/portraits/Azur_Lane/lituoliao_2.png" }
+    lituoliao_02_X = { texturefile = "gfx/models/portraits/Azur_Lane/lituoliao_2_X.png" }
+    lituoliao_03 = { texturefile = "gfx/models/portraits/Azur_Lane/lituoliao_3.png" }
+    lituoliao_03_X = { texturefile = "gfx/models/portraits/Azur_Lane/lituoliao3_X.png" }
+	lituoliao_04 = { texturefile = "gfx/models/portraits/Azur_Lane/lituoliao_4.png" }
+	edu_01 = { texturefile = "gfx/models/portraits/Azur_Lane/edu.png" }
+	edu_01_X = { texturefile = "gfx/models/portraits/Azur_Lane/edu_X.png" }
+	edu_02 = { texturefile = "gfx/models/portraits/Azur_Lane/edu_2.png" }
+	edu_02_X = { texturefile = "gfx/models/portraits/Azur_Lane/edu_2_X.png" }
+	edu_03 = { texturefile = "gfx/models/portraits/Azur_Lane/edu_3.png" }
+	edu_03_X = { texturefile = "gfx/models/portraits/Azur_Lane/edu_3_X.png" }
+	edu_04 = { texturefile = "gfx/models/portraits/Azur_Lane/edu_4.png" }
+    edu_04_X = { texturefile = "gfx/models/portraits/Azur_Lane/edu_4_X.png" }
+	daofeng_01 = { texturefile = "gfx/models/portraits/Azur_Lane/daofeng.png" }
+	daofeng_01_X = { texturefile = "gfx/models/portraits/Azur_Lane/daofeng_X.png" }
+	daofeng_04 = { texturefile = "gfx/models/portraits/Azur_Lane/daofeng_4.png" }
+	daofeng_04_X = { texturefile = "gfx/models/portraits/Azur_Lane/daofeng_4_X.png" }
+	daofeng_05 = { texturefile = "gfx/models/portraits/Azur_Lane/daofeng_5.png" }
+	daofeng_05_X = { texturefile = "gfx/models/portraits/Azur_Lane/daofeng_5_X.png" }
+	dafeng_01 = { texturefile = "gfx/models/portraits/Azur_Lane/dafeng.png" }
+	dafeng_01_X = { texturefile = "gfx/models/portraits/Azur_Lane/dafeng_X.png" }
+    guanghui_01 = { texturefile = "gfx/models/portraits/Azur_Lane/guanghui.png" }
+	guanghui_01_X = { texturefile = "gfx/models/portraits/Azur_Lane/guanghui_X.png" }
+	lingbo_01 = { texturefile = "gfx/models/portraits/Azur_Lane/lingbo_01.png" }
+}
+
+portrait_groups = {
+	star = {
+		#物种选择页面的第一个肖像
+		default = lingbo_01
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+
+			add = {
+				portraits = {
+					lituoliao_01
+					lituoliao_02
+					lituoliao_03
+					lituoliao_04
+					edu_01
+					edu_02
+					edu_03
+					edu_04
+					dafeng_01
+					daofeng_01
+					daofeng_04
+					daofeng_05
+					guanghui_01
+					lingbo_01
+				}
+			}
+
+		}
+
+		#species scope 科学家肖像
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+					lituoliao_01_X
+					lituoliao_02_X
+					lituoliao_03_X
+					edu_01_X
+					edu_02_X
+					edu_03_X
+					edu_04_X
+					dafeng_01_X
+					daofeng_04_X
+					daofeng_05_X
+					guanghui_01_X
+					lingbo_01
+				}
+			}
+		}
+
+		#pop scope 人口肖像
+		pop = { #for a specific pop
+			add = {
+				portraits = {
+					lituoliao_01_X
+					lituoliao_02_X
+					lituoliao_03_X
+					edu_01_X
+					edu_02_X
+					edu_03_X
+					edu_04_X
+					dafeng_01_X
+					daofeng_01_X
+					daofeng_04_X
+					daofeng_05_X
+					guanghui_01_X
+					lingbo_01
+				}
+			}
+		}
+        #领袖页面的人物肖像
+		leader = {
+			add = {
+				portraits = {
+					lituoliao_01_X
+					lituoliao_02_X
+					lituoliao_03_X
+					edu_01_X
+					edu_02_X
+					edu_03_X
+					edu_04_X
+					dafeng_01_X
+					daofeng_01_X
+					daofeng_04_X
+					daofeng_05_X
+					guanghui_01_X
+					lingbo_01
+				}
+			}
+		}
+        #国家元首的图片
+		ruler = {
+			add = {
+				portraits = {
+					lituoliao_01
+					lituoliao_02
+					lituoliao_03
+					lituoliao_04
+					edu_01
+					edu_02
+					edu_03
+					edu_04
+					dafeng_01
+					daofeng_01
+					daofeng_04
+					daofeng_05
+					guanghui_01
+					lingbo_01
+				}
+			}
+		}
+	}
+}
